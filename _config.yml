@@ -17,8 +17,8 @@ title: Little Alchemist Blog
 email: lbighetti@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Learning by experiencing. Experiencing by learning.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "https://lbighetti.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://www.littlealchemist.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: LeandroBighetti
 github_username:  lbighetti
 
