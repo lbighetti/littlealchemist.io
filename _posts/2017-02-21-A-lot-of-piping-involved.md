@@ -173,8 +173,11 @@ param
   |> function4(supa, dupa)
 ```
 
-P R O P E R L Y.  
-O N   A   D A I L Y.
+P R O P E R L Y.
+
+O N  
+A  
+D A I L Y.
 
 ---
 
