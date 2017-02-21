@@ -12,7 +12,7 @@ It went something like this:
 Me: _I'm going to work with Elixir._  
 Him: _Elixir? ...mkey...never heard of it._  
 Me: _It's a functional language that runs on the Erlang VM_  
-Him _Functional? There will be a lot of piping involved._  
+Him: _Functional? There will be a lot of piping involved._  
 
 Wise man.  
 There is indeed.
@@ -30,7 +30,7 @@ Let me explain.
 
 The __pipe__ is used to make __sequential transformations__ much more readable.
 
-Imagine you need call a function with a certain parameters you have, and use the output of that as argument to call a second function. Like so:
+Imagine you need call a function with certain parameters you have, and use the output of that. Like so:
 
 ```
 output1 = function(param)
@@ -181,13 +181,14 @@ D A I L Y.
 
 ---
 
-That's it for today, a little insight on what is piping and how it works, hope you enjoyed it.  
-Don't forget to click _recommend_ and share this post with your friends and anyone interested in learning more about this subject.
-
-I hope this has been useful to you,  
+That's it for today, hope you enjoyed it. 
+ 
+Don't forget to _like_ and share this post with your friends and anyone interested in learning about this subject.
+ 
+If this was useful to you,  
 please leave a comment and let me know!
 
-If it hasn't, do leave a comment and point out how total crap this is and what a waste of your time it was.
+If it wasn't, also leave a comment and point out how total crap this is and what a waste of your time it was.
 
 Take care and until next time,
 Happy brewing!
