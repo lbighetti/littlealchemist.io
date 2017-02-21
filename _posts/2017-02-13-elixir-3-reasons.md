@@ -2,7 +2,6 @@
 layout: post
 title:  "Elixir - 3 reasons why you should be using it"
 date:   2017-02-13 14:12:00 +0100
-categories: elixir
 ---
 
 ## Reason 1: Functional
