@@ -4,6 +4,8 @@ title:  "Elixir - 3 reasons why you should be using it"
 date:   2017-02-13 14:12:00 +0100
 ---
 
+Let's go through some major reasons why Elixir and its ecosystem is great for web development.
+
 ## Reason 1: Functional
 
 * _Elixir is a proper functional language._

@@ -3,7 +3,7 @@ layout: post
 title: Pattern Matching for Dummies
 date:   2017-02-16 19:29:00 +0100
 ---
-I started learning Elixir and it soon struck me: __the equal sign works differently__.
+I had heard about Patten Matching before and was totally clueless about it. But when I started learning Elixir it soon struck me: __the equal sign works differently__.
 
 Usually, in programming the equal sign performs an __assignment__.
 
