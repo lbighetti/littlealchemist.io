@@ -76,17 +76,17 @@ Let's assume you believe me so far.
 
 You might reason as follows:
 
-"OK Leandro, cool, we have a language that is fast, reliable, fault-tolerant and easy to distribute in a mountain of cores and servers. Great.
+_"OK Leandro, cool, we have a language that is fast, reliable, fault-tolerant and easy to distribute in a mountain of cores and servers. Great._
 
-But I have kids to feed. I have to pay my rent, pay my taxes, so...
+_But I have kids to feed. I have to pay my rent, pay my taxes, so..._
 
-__Is it productive ?__
+___Is it productive ?___
 
-Can I quickly - and effectively - create a new web project, whether it is a rest API or fullstack ?
+_Can I quickly - and effectively - create a new web project, whether it is a rest API or fullstack ?_
 
-This talk is great, but X, (replace X with great language + framework combos: Spring Boot / Rails, Django, Play...) X allows me to achieve higher orders of productivity because they already solve most of common problems for me and perform the usual setup automatically. I just modify to my taste and focus on my logic.
+_This talk is great, but my current language and framework allow me to achieve higher orders of productivity, because they **already solve most of my common problems for me**. I just modify to my taste and focus on my logic._
 
-How can I possibly achieve this here ? "
+_How can I possibly achieve this here ?"_
 
 I know.
 
@@ -101,9 +101,9 @@ Ever.
 
 Phoenix is your go-to web framework in Elixir.  
 Phoenix was designed with lessons learned from decades of web development.  
-It comes with great support for building rest APIs, sockets and full stack applications.
+It comes with great support for building __rest APIs__, __sockets__ and __full stack__ applications.
 
-It's awesome.
+__It's awesome.__
 
 You can generate projects with one command and a prototype within minutes.  
 You can have a potent frontend with the Elixir template engine.
@@ -119,13 +119,12 @@ Whatever web application you need to build, Phoenix has got you covered.
 
 To recap:
 
-* Functional - great for webserver, concurrency.
-* Erlang - Fault-tolerant, Scalable and mature.
-* Phoenix - Fast, Productive, reliable.
-
-In a nutshell, those were the main points for my decision to jump onto Elixir.
+* Functional - Great for Webserver, Concurrency.
+* Erlang - Fault-tolerant, Scalable and Mature.
+* Phoenix - Fast, Productive, Reliable.
 
 ---
+
 Don't forget to like this post and share it with your friends.
 
 I hope you enjoyed, I'll see you next time.  
