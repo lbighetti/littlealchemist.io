@@ -3,6 +3,7 @@ layout: post
 title:  "Elixir - 3 reasons why you should be using it"
 date:   2017-02-22 14:12:00 +0100
 image: /img/elixir.png
+category: elixir
 ---
 
 Let's go through some major reasons why Elixir and its ecosystem are great for web development.
