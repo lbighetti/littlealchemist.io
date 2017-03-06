@@ -3,6 +3,7 @@ layout: post
 title: "How to Suck at Programming #1 - Intro and Getting Religious"
 date: "2017-03-01 12:17:03 +0100"
 category: How to Suck at Programming
+image: /img/thumb_down.png
 ---
 
 People often ask me how to be a good programmer. The hell if I know.  
