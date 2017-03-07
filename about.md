@@ -5,7 +5,7 @@ subtitle: Backgrounds on a daily
 image: /img/leandro.png
 ---
 
-The name is Leandro Bighetti.
+The name is __Leandro Bighetti.__
 
 I blog about my experiences learning Elixir, the Phoenix framework, functional programmming and everything that comes along with it.
 
