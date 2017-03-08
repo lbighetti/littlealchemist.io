@@ -43,7 +43,7 @@ avatar: "/img/avatar-icon.png"
 author:
   name: Leandro Bighetti
   email: "leandro@littlealchemist.io"
-  facebook: yourname  # eg. daattali
+  facebook: littlealchemist.io  # eg. daattali
   github: lbighetti    # eg. daattali
   twitter: littlealch_io   # eg. daattali
   reddit: yourname    # eg. daattali
@@ -60,13 +60,13 @@ author:
 # Select which links to show in the footer
 footer-links-active:
   rss: false
-  facebook: false
+  facebook: true
   email: true
   twitter: true
   google-plus: false
   github: true
   reddit: false
-  linkedin: false
+  linkedin: true
   xing: false
   stackoverflow: false
   snapchat: false
