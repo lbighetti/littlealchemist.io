@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LittleAlchemist.io</title>
+    <description>Learning by experience.</description>
+    <link>http://localhost:4000</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Elixir - 3 reasons why you should be using it</title>
+        <description>
+          
+          Let’s go through some major reasons why Elixir and its ecosystem are great for web development. Reason 1: Functional Elixir is a proper functional language. And why is this a good thing ? Because the problem of a web server is a very functional one. Think about it for second....
+        </description>
+        <pubDate>Tue, 07 Mar 2017 15:50:00 -0800</pubDate>
+        <link>http://localhost:4000/2017-03-07-elixir-3-reasons-why-you-should-be-using-it/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017-03-07-elixir-3-reasons-why-you-should-be-using-it/</guid>
+      </item>
+    
+      <item>
+        <title>How to Suck at Programming #1 - Intro and Getting Religious</title>
+        <description>
+          
+          People often ask me how to be a good programmer. The hell if I know. I do know how to suck at programming. So I tend to approach the subject with the so called via negativa. By subtraction. Don’t be a sucker. Its not always clear what is the best...
+        </description>
+        <pubDate>Wed, 01 Mar 2017 03:17:03 -0800</pubDate>
+        <link>http://localhost:4000/2017-03-01-how-to-suck-at-programming-1-intro-and-getting-religious/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017-03-01-how-to-suck-at-programming-1-intro-and-getting-religious/</guid>
+      </item>
+    
+  </channel>
+</rss>

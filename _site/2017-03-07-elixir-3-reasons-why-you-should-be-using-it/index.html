@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Elixir - 3 reasons why you should be using it</title>
+
+  <meta name="author" content="Leandro Bighetti" />
+
+  
+
+  <link rel="alternate" type="application/rss+xml" title="LittleAlchemist.io - Learning by experience." href="/feed.xml" />
+
+  
+
+  
+    
+      
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/css/bootstrap-social.css" />
+    
+      <link rel="stylesheet" href="/css/main.css" />
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+  
+
+  
+
+  
+
+    <!-- Facebook OpenGraph tags -->
+  
+
+  
+  <meta property="og:title" content="Elixir - 3 reasons why you should be using it" />
+  
+
+   
+  <meta property="og:description" content="Let’s go through some major reasons why Elixir and its ecosystem are great for web development. Reason 1: Functional Elixir is a proper functional language. And why is this a good thing ? Because the problem of a web server is a very functional one. Think about it for second....">
+  
+
+
+  <meta property="og:type" content="website" />
+
+  
+  <meta property="og:url" content="http://localhost:4000/2017-03-07-elixir-3-reasons-why-you-should-be-using-it/" />
+  <link rel="canonical" href="http://localhost:4000/2017-03-07-elixir-3-reasons-why-you-should-be-using-it/" />
+  
+
+  
+  <meta property="og:image" content="/img/elixir.png" />
+  
+  
+
+  <!-- Twitter summary cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@littlealch_io" />
+  <meta name="twitter:creator" content="@littlealch_io" />
+
+  
+  <meta name="twitter:title" content="Elixir - 3 reasons why you should be using it" />
+  
+
+  
+  <meta name="twitter:description" content="Let’s go through some major reasons why Elixir and its ecosystem are great for web development. Reason 1: Functional Elixir is a proper functional language. And why is this a good thing ? Because the problem of a web server is a very functional one. Think about it for second....">
+  
+
+  
+  <meta name="twitter:image" content="/img/elixir.png" />
+  
+
+</head>
+
+
+  <body>
+
+    
+  
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <a class="navbar-brand" href="http://localhost:4000">LittleAlchemist.io</a>
+      
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+          <li>
+            
+            
+
+
+
+
+
+<a href="/about">About</a>
+
+          </li>
+        
+        
+        
+          <li class="navlinks-container">
+            <a class="navlinks-parent" href="javascript:void(0)">Partners</a>
+            <div class="navlinks-children">
+              
+                
+                  
+            
+
+
+
+
+
+<a href="https://sprite-storm.com">Sprite Storm</a>
+
+                
+              
+                
+                  
+            
+
+
+
+
+
+<a href="http://blacksheepstudios.tv">Black Sheep Studios TV</a>
+
+                
+              
+            </div>
+          </li>
+        
+        
+      </ul>
+    </div>
+
+	
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+	    <a href="http://localhost:4000 ">
+	      <img class="avatar-img" src="/img/elixir.png" />
+		</a>
+	  </div>
+	</div>
+	
+
+  </div>
+</nav>
+
+
+    <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-heading">
+          <h1>Elixir - 3 reasons why you should be using it</h1>
+		  
+		  
+		  
+		  <span class="post-meta">Posted on March 7, 2017</span>
+		  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+      <article role="main" class="blog-post">
+        <p>Let’s go through some major reasons why Elixir and its ecosystem are great for web development.</p>
+
+<h2 id="reason-1-functional">Reason 1: Functional</h2>
+
+<ul>
+  <li><em>Elixir is a proper functional language.</em></li>
+</ul>
+
+<p>And why is this a good thing ?</p>
+
+<p>Because the problem of a <strong>web server</strong> is a very <strong>functional one</strong>.</p>
+
+<p>Think about it for second.</p>
+
+<p>You receive a request, do something, and then you produce a response.<br />
+You receive a very defined input, and produce a very defined output.</p>
+
+<p><strong>It’s a function.</strong></p>
+
+<p>You see, <em>the nature of the problem is functional</em>, so it only makes sense to use a functional language to solve it.</p>
+
+<p>But that’s not all.</p>
+
+<p><strong>Data immutability.</strong></p>
+
+<p>In Elixir, all data is immutable.<br />
+This means your data is safe from being changed by some other part of your application or by some other application.</p>
+
+<p>Sure, you can still <em>bind</em> your variable to another value, but the value itself is immutable.</p>
+
+<p>Imagine that, <em>the end of concurrency nightmares.</em></p>
+
+<h2 id="reason-2-erlang">Reason 2: Erlang</h2>
+
+<ul>
+  <li><em>Elixir runs on the Erlang VM, and is fully interoperable with Erlang.</em></li>
+</ul>
+
+<p>Let me tell you something about Erlang.</p>
+
+<p>It’s fast.</p>
+
+<p>It’s extremely fault-tolerant and scalable.</p>
+
+<p>In Erlang, all memory and CPU cores available are used to it’s maximum potency.<br />
+More importantly, it runs tiny tiny Erlang processes which <em>are not</em> system processes.<br />
+They are much smaller and more lightweight.</p>
+
+<p>Erlang will execute it’s tiny processes using all cores and memory available.<br />
+Consequently, two extremely awesome things happen:</p>
+
+<p><em>the end of your multi-threading and scalability nightmares</em>.</p>
+
+<p>And not with some rocket science setup, this all works out-of-the-box.</p>
+
+<p>Now, let’s go through some real world facts about Erlang.</p>
+
+<p>It runs more than 50% of all telecom systems on the planet.<br />
+How often is your landline telephone “down”, or “temporarily unavailable” ?</p>
+
+<p>Not very often is it?</p>
+
+<p>Another major project using Erlang is the real-time chat application WhatsApp.<br />
+When Facebook bought them, they were running <em>millions of connections in a single Erlang node</em>.</p>
+
+<p>Enough said.</p>
+
+<h2 id="reason-3-phoenix">Reason 3: Phoenix</h2>
+
+<ul>
+  <li><em>Phoenix is the de facto web framework for Elixir and it’s awesome.</em></li>
+</ul>
+
+<p>Let’s assume you believe me so far.</p>
+
+<p>You might reason as follows:</p>
+
+<p><em>“OK Leandro, cool, we have a language that is fast, reliable, fault-tolerant and easy to distribute in a mountain of cores and servers. Great.</em></p>
+
+<p><em>But I have kids to feed. I have to pay my rent, pay my taxes, so…</em></p>
+
+<p><strong><em>Is it productive ?</em></strong></p>
+
+<p><em>Can I quickly - and effectively - create a new web project, whether it is a rest API or fullstack ?</em></p>
+
+<p><em>This talk is great, but my current language and framework allow me to achieve higher orders of productivity, because they <strong>already solve most of my common problems for me</strong>. I just modify to my taste and focus on my logic.</em></p>
+
+<p><em>How can I possibly achieve this here ?”</em></p>
+
+<p>I know.</p>
+
+<p>I have asked myself the same question.</p>
+
+<p>The answer is <strong>Phoenix.</strong></p>
+
+<p>Reborn from flames and ashes. Again and again.<br />
+It will not die.</p>
+
+<p>Ever.</p>
+
+<p>Phoenix is your go-to web framework in Elixir.<br />
+Phoenix was designed with lessons learned from decades of web development.<br />
+It comes with great support for building <strong>rest APIs</strong>, <strong>sockets</strong> and <strong>full stack</strong> applications.</p>
+
+<p><strong>It’s awesome.</strong></p>
+
+<p>You can generate projects with one command and a prototype within minutes.<br />
+You can have a potent frontend with the Elixir template engine.</p>
+
+<p>Or you can make beautiful and stupidly fast rest APIs and sockets.</p>
+
+<p>Or both.
+You choose.</p>
+
+<p>Whatever web application you need to build, Phoenix has got you covered.</p>
+
+<hr />
+
+<p>To recap:</p>
+
+<ul>
+  <li>Functional - Great for Webserver, Concurrency.</li>
+  <li>Erlang - Fault-tolerant, Scalable and Mature.</li>
+  <li>Phoenix - Fast, Productive, Reliable.</li>
+</ul>
+
+<hr />
+
+<p>Don’t forget to like this post and share it with your friends.</p>
+
+<p>I hope you enjoyed, I’ll see you next time.<br />
+Take care,</p>
+
+      </article>
+
+      
+
+      
+        <!-- Check if any share-links are active -->
+
+
+
+
+<section id = "social-share-section">
+
+  <!--- Share on Twitter -->
+  
+    <a href="https://twitter.com/intent/tweet?text=Elixir+-+3+reasons+why+you+should+be+using+it+http://localhost:4000/2017-03-07-elixir-3-reasons-why-you-should-be-using-it/"
+      class="btn btn-social-icon btn-twitter" title="Share on Twitter">
+      <span class="fa fa-fw fa-twitter" aria-hidden="true"></span>
+    </a>
+  
+
+  <!--- Share on Facebook -->
+  
+    <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/2017-03-07-elixir-3-reasons-why-you-should-be-using-it/"
+      class="btn btn-social-icon btn-facebook" title="Share on Facebook">
+      <span class="fa fa-fw fa-facebook" aria-hidden="true"></span>
+    </a>
+  
+
+  <!--- Share on Google Plus -->
+  
+
+  <!--- Share on LinkedIn -->
+  
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/2017-03-07-elixir-3-reasons-why-you-should-be-using-it/"
+      class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
+      <span class="fa fa-fw fa-linkedin" aria-hidden="true"></span>
+    </a>
+  
+
+</section>
+
+
+
+      
+
+      <!-- Begin MailChimp Signup Form -->
+      <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+      <style type="text/css">
+      	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+      	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+      	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+      </style>
+      <div id="mc_embed_signup">
+      <form action="//littlealchemist.us15.list-manage.com/subscribe/post?u=b3dd02f0e85351faf3f1844a9&amp;id=870b1a177a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+      	<h2>Don't miss out on future posts!</h2>
+      <div class="mc-field-group">
+      	<label for="mce-EMAIL">Email Address </label>
+      	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+      </div>
+      	<div id="mce-responses" class="clear">
+      		<div class="response" id="mce-error-response" style="display:none"></div>
+      		<div class="response" id="mce-success-response" style="display:none"></div>
+      	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b3dd02f0e85351faf3f1844a9_870b1a177a" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          </div>
+      </form>
+      </div>
+
+      <!--End mc_embed_signup-->
+
+
+      <ul class="pager blog-pager">
+        
+        <li class="previous">
+          <a href="/2017-03-01-how-to-suck-at-programming-1-intro-and-getting-religious/" data-toggle="tooltip" data-placement="top" title="How to Suck at Programming #1 - Intro and Getting Religious">&larr; Previous Post</a>
+        </li>
+        
+        
+      </ul>
+
+      
+        <div class="disqus-comments">
+          
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	    var disqus_shortname = 'littlealchemistio';
+	    /* ensure that pages with query string get the same discussion */
+            var url_parts = window.location.href.split("?");
+            var disqus_url = url_parts[0];	    
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+  <div class="container beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          <li>
+            <a href="https://www.facebook.com/littlealchemist.io" title="Facebook">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          <li>
+            <a href="https://github.com/lbighetti" title="GitHub">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		  
+          <li>
+            <a href="https://twitter.com/littlealch_io" title="Twitter">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+	  
+      
+		  
+          <li>
+            <a href="mailto:leandro@littlealchemist.io" title="Email me">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		  
+		  
+		  
+      
+      
+          <li>
+            <a href="https://www.instagram.com/littlealchemist.io" title="Instagram">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+      
+      
+      
+		  
+        </ul>
+        <p class="copyright text-muted">
+		  Leandro Bighetti
+		  &nbsp;&bull;&nbsp;
+		  2017
+
+		  
+		  &nbsp;&bull;&nbsp;
+		  <a href="http://localhost:4000">LittleAlchemist.io</a>
+		  
+	    </p>
+	        <!-- Please don't remove this, keep my open source work credited :) -->
+		<p class="theme-by text-muted">
+		  Theme by
+		  <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+		</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+    
+
+
+
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script>
+      	if (typeof jQuery == 'undefined') {
+      	  document.write('<script src="/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+      	}
+      </script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/bootstrap.min.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/main.js"></script>
+    
+  
+
+
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-92510222-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+
+
+  
+  </body>
+</html>
