@@ -8,8 +8,6 @@ category: elixir
 subtitle: Let's go through some major reasons why Elixir and its ecosystem are great for web development.
 ---
 
-Let's go through some major reasons why Elixir and its ecosystem are great for web development.
-
 ## Reason 1: Functional
 
 * _Elixir is a proper functional language._
