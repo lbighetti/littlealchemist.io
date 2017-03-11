@@ -151,6 +151,7 @@ That's it for today, a brief description of pattern matching in Elixir and how t
 A very interesting topic and I will surely further expand on another post in the future.
 
 Hope you enjoyed it,
+Don't forget to like the post and share with your friends!
 
 And until next time,
-happy brewing!
+Happy brewing!

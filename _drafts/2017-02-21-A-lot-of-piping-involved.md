@@ -181,14 +181,14 @@ D A I L Y.
 
 ---
 
-That's it for today, hope you enjoyed it. 
- 
+That's it for today, hope you enjoyed it.
+
 Don't forget to _like_ and share this post with your friends and anyone interested in learning about this subject.
- 
+
 If this was useful to you,  
 please leave a comment and let me know!
 
-If it wasn't, also leave a comment and point out how total crap this is and what a waste of your time it was.
+If it wasn't, also leave a comment and point out what a total crap and waste of your time it was.
 
 Take care and until next time,
 Happy brewing!
