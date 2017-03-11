@@ -1,13 +1,16 @@
 ---
 layout: post
-title: "How to Suck at Programming #1 - Intro and Getting Religious"
-date: "2017-03-01 12:17:03 +0100"
+title: "How to Suck at Programming #1 - Getting Religious"
+date: "2017-03-11 21:39:03 +0100"
 category: How to Suck at Programming
 image: /img/thumb_down.png
+share-img: /img/thumb_down.png
+subtitle: Debuting the series that will teach how to be a horrible a programmer.
+
 ---
 
-People often ask me how to be a good programmer. The hell if I know.  
-I do know how to __suck at programming__.
+People often ask me how to be a good programmer. It's not an easy or simple answer to that question.  
+I do know very clearly how to __suck at programming__.
 
 So I tend to approach the subject with the so called _via negativa_.  
 By subtraction.
