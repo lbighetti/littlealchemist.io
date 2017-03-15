@@ -1,11 +1,15 @@
 ---
 layout: post
-title: Pattern Matching for Dummies
-date:   2017-02-16 19:29:00 +0100
+title: Elixir - Understanding Pattern Matching
+date:   2017-03-15 20:00:00 +0100
+image: /img/elixir_pattern_matching.png
+share-img: /img/elixir_pattern_matching.png
+excerpt: Let's undertand what is Pattern Matching in Elixir and how it makes code more efficient and more readable.
+meta-description: Let's undertand what is Pattern Matching in Elixir and how it makes code more efficient and more readable.
 ---
-I had heard about Patten Matching before and was totally clueless about it. But when I started learning Elixir it soon struck me: __the equal sign works differently__.
+I had heard about Pattern Matching before and was totally clueless about it. But when I started learning Elixir it soon struck me: __the equal sign works differently__.
 
-Usually, in programming the equal sign performs an __assignment__.
+Usually, in programming the __equal sign__ performs an __assignment__.
 
 So if you have a expression like:
 
@@ -13,7 +17,7 @@ So if you have a expression like:
 foo = 7
 ```
 
-Would usually mean you're evaluating the expression on the right, and are storing the result in the variable on the left.
+Would usually mean you're __evaluating__ the expression on the right, and are __storing__ the result in the variable on the left.
 
 ```elixir
 foo = ["b", "a", "r"]
@@ -85,6 +89,32 @@ foo = 7
 
 Since now foo is 7 and it is on the right, Elixir will not bind it to something else.
 
+## More examples
+
+Another thing you can do is match when the data structure carry different data types.  
+For example:
+
+```elixir
+[a, b] = ["foo", 42]
+```
+
+As you can imagine, __a__ bind to `"foo"` and __b__ to `42`.
+
+You can even match a list within a list.
+
+```elixir
+[a, b, c] = ["foo", 42, ["hello","little", "alchemist"]]
+```
+
+And besides __a__ and __b__ continuing as before, now __c__ will bind to `["hello","little", "alchemist"]`.  
+And you can even go one step futher and do:
+
+```elixir
+[a, b, [c, d, e]] = ["foo", 42, ["hello","little", "alchemist"]]
+```
+
+And now __c__,__d__ and __e__ will bind to `"hello"`, `"little"` and `"alchemist"` respectively.
+
 ## Maps
 
 One very common thing to do in Elixir is pattern match Maps, which is super powerful.
@@ -106,7 +136,7 @@ But here it comes:
 ```elixir
 %{"key" => b} = %{"key" => "value"}
 ```
-Here, __b__ is now _value_.
+Here, __b__ is now `"value"`.
 
 And you can even do this, which has the same effect:
 
@@ -115,7 +145,7 @@ a = %{"key" => "value"}
 %{"key" => b} = a
 ```
 
-Here, __b__ is still _value_.
+Here, __b__ is still `"value"`.
 
 As long as the key of the map match, you can use variables as you please - just keep in mind that again, only the left side will be able to bind variables.
 
@@ -123,7 +153,7 @@ As long as the key of the map match, you can use variables as you please - just 
 
 This is one of my favourite tricks.
 
-Now you have a function, and you receive a map as an argument.
+Now you have a function, and you receive __a map as an argument__.
 And you need the value that comes from the key `"foo"`.
 
 You can achieve this like so:
@@ -145,6 +175,8 @@ In this case, it will print
 
 > "bar"
 
+_Boom! Headshot!_
+
 ---
 
 That's it for today, a brief description of pattern matching in Elixir and how to use it.  
@@ -154,4 +186,4 @@ Hope you enjoyed it,
 Don't forget to like the post and share with your friends!
 
 And until next time,
-Happy brewing!
+Take care and happy brewing!

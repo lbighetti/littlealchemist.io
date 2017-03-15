@@ -5,7 +5,8 @@ date: "2017-03-11 21:39:03 +0100"
 category: How to Suck at Programming
 image: /img/thumb_down.png
 share-img: /img/thumb_down.png
-subtitle: Debuting the series that will teach how to be a horrible a programmer.
+excerpt: Debuting the series that will teach how to be a horrible a programmer.
+meta-description: Debuting the series that will teach how to be a horrible a programmer.
 
 ---
 
