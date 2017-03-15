@@ -46,7 +46,7 @@ In the above case it would still work mostly as you imagine, with a slightly dif
 
 In the first example Elixir would bind the variable __foo__ to __7__.
 
-In th second example, foo would bind to the array `["b", "a", "r"]`
+In the second example, foo would bind to the array `["b", "a", "r"]`
 
 However, this would also work:
 
