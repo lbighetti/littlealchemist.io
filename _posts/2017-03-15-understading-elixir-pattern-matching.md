@@ -44,9 +44,17 @@ __This is not limited to 1 variable__.
 
 In the above case it would still work mostly as you imagine, with a slightly different naming, it is called __variable binding__.
 
-In the first example Elixir would bind the variable __foo__ to __7__.
+In the first example Elixir would bind the variable __foo__ to `7`.
 
-In the second example, foo would bind to the array `["b", "a", "r"]`
+```elixir
+foo = 7
+```
+
+In the second example, foo would bind to the list `["b", "a", "r"]`
+
+```elixir
+foo = ["b", "a", "r"]
+```
 
 However, this would also work:
 
@@ -55,7 +63,7 @@ However, this would also work:
 ```
 
 Yes.
-__foo__ binds to _b_, __bar__ binds to _a_ and __ho__ binds to _r_.
+__foo__ binds to `"b"`, __bar__ binds to `"a"` and __ho__ binds to `"r"`.
 
 Awesome, isn't it ?
 
@@ -122,36 +130,47 @@ One very common thing to do in Elixir is pattern match Maps, which is super powe
 This is how you define a map in Elixir:
 
 ```elixir
-%{"key" => "value"}
+%{"key" => "foo"}
 ```
 
 Now you can obviously bind this to a variable:
 
 ```elixir
-a = %{"key" => "value"}
+a = %{"key" => "foo"}
 ```
 
 But here it comes:
 
 ```elixir
-%{"key" => b} = %{"key" => "value"}
+%{"key" => my_value} = %{"key" => "foo"}
 ```
-Here, __b__ is now `"value"`.
+Here, __my_value__ is now `"foo"`.  
+For pattern matching to work on __maps__, the __keys need to match__ - which is happening here.  
+So Elixir binds the value on the left, to the value on the right.
 
-And you can even do this, which has the same effect:
+And you can even do this storing the map on a variable:
 
 ```elixir
-a = %{"key" => "value"}
-%{"key" => b} = a
+my_map = %{"key" => "foo"}
+%{"key" => my_value} = my_map
 ```
 
-Here, __b__ is still `"value"`.
+Here, __my_value__ will still bind to `"foo"`.  
+Elixir try to make the maps on both side match. So as long as the keys match, it will bind the _value on the left_ (__my_value__), to the _value on the right_ `"foo"`.
+
+In other words, it have the same effect as doing this:
+
+```elixir
+my_value = my_map["key"]
+```
 
 As long as the key of the map match, you can use variables as you please - just keep in mind that again, only the left side will be able to bind variables.
 
+Take a deep breath to process this, because we have one last trick.
+
 ## Pattern Matching a Map on function argument
 
-This is one of my favourite tricks.
+This is one of my favourite.
 
 Now you have a function, and you receive __a map as an argument__.
 And you need the value that comes from the key `"foo"`.
