@@ -4,8 +4,8 @@ title: Understanding Elixir Pattern Matching
 date:   2017-03-15 20:00:00 +0100
 image: /img/elixir_pattern_matching.png
 share-img: /img/elixir_pattern_matching.png
-excerpt: Let's undertand what is Pattern Matching in Elixir and how it makes code more efficient and more readable.
-meta-description: Let's undertand what is Pattern Matching in Elixir and how it makes code more efficient and more readable.
+excerpt: Let's understand what is Pattern Matching in Elixir and how it makes code more efficient and more readable.
+meta-description: Let's understand what is Pattern Matching in Elixir and how it makes code more efficient and more readable.
 ---
 I had heard about Pattern Matching before and was totally clueless about it. But when I started learning Elixir it soon struck me: __the equal sign works differently__.
 
