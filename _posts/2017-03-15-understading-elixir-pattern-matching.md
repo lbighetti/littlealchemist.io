@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Elixir - Understanding Pattern Matching
+title: Understanding Elixir Pattern Matching
 date:   2017-03-15 20:00:00 +0100
 image: /img/elixir_pattern_matching.png
 share-img: /img/elixir_pattern_matching.png
