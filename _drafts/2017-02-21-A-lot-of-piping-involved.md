@@ -19,7 +19,7 @@ There is indeed.
 
 This is how it looks like:
 
-```
+```elixir
 |>
 ```
 
@@ -32,13 +32,13 @@ The __pipe__ is used to make __sequential transformations__ much more readable.
 
 Imagine you need call a function with certain parameters you have, and use the output of that. Like so:
 
-```
+```elixir
 output1 = function(param)
 ```
 
 Now, often you have to to this multiple times in sequence, making something like this :
 
-```
+```elixir
 output1 = function(param)
 output2 = function2(output1)
 output3 = function3(output2)
@@ -47,7 +47,7 @@ output4 = function4(output3)
 
 Of course you can tell me, I can simplify that in most languages to:
 
-```
+```elixir
 output4 = function4(function3(function2(function(param))))
 ```
 
@@ -61,7 +61,7 @@ We see code like this, we get confused.
 
 Here is how you would do that in Elixir:
 
-```
+```elixir
 param
   |> function
   |> function2
@@ -78,7 +78,7 @@ And the argument of your first function is the thing on the top, in this case _p
 
 So if we wanna break it down, for explanation sake, we could write it like:
 
-```
+```elixir
 output =
   param
     |> function
@@ -86,7 +86,7 @@ output =
 
 That's the same as writing:
 
-```
+```elixir
 output = function(param)
 ```
 
@@ -94,7 +94,7 @@ For just 1 function like this, it probably doens't make much sense to pipe.
 
 Progressing to two function calls:
 
-```
+```elixir
 output2 =
   param
     |> function
@@ -103,14 +103,14 @@ output2 =
 
 The above is the same as:
 
-```
+```elixir
 output = function(param)
 ouput2 = function2(output)
 ```
 
 or more shortly:
 
-```
+```elixir
 ouput2 = function2(function(param))
 ```
 
@@ -118,13 +118,13 @@ So...
 
 Hopefully you can see now how this:
 
-```
+```elixir
 output4 = function4(function3(function2(function(param))))
 ```
 
 Is the same as the piped counterpart:
 
-```
+```elixir
 param
   |> function
   |> function2
