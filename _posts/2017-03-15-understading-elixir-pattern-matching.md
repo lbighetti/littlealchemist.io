@@ -238,7 +238,7 @@ How to achieve this ?
 You can do this like so:
 
 ```elixir
-def my_function(%{"foo" => my_variable})
+def my_function(%{"foo" => my_variable}) do
   IO.puts my_variable
 end
 ```
