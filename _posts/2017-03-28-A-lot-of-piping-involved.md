@@ -8,13 +8,14 @@ Let's learn about a core feature of Elixir and many other functional languages: 
 
 When I decided to jump into Elixir, I had a dialog with a good german friend of mine (Robert if you're reading, you're awesome).
 
-It went something like this:  
-Me: _I'm going to work with Elixir._  
-Him: _Elixir? ...mkey...never heard of it._  
-Me: _It's a functional language that runs on the Erlang VM_  
-Him: _Functional? There will be a lot of piping involved._  
+It went something like this:
 
-Wise man.  
+\- _I'm going to work with Elixir._  
+\- _Elixir? ...mkey...never heard of it._  
+\- _It's a functional language that runs on the Erlang VM_  
+\- _Functional? There will be a lot of piping involved._  
+
+__Wise man.__  
 There is indeed.
 
 This is how it looks like:
@@ -74,7 +75,7 @@ param
 It's pretty straight-forward.
 
 Whatever the __output__ of the function being called, it will be __passed to the next function as a argument__.  
-And the argument of your first function is the thing on the top, in this case _param_.
+And the argument of your first function is the thing on the top, in this case `param`.
 
 So if we wanna break it down, for explanation sake, we could write it like:
 
