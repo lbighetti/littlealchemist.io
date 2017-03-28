@@ -315,12 +315,18 @@ D A I L Y.
 
 That's it for today, hope you enjoyed it.
 
-Don't forget to share this post with your friends and anyone interested in learning about this subject.
+Don't forget to check out my other Elixir posts:
+
+* [Elixir - 3 Reasons why you should be using it](http://www.littlealchemist.io/2017-03-07-elixir-3-reasons-why-you-should-be-using-it/)
+* [Understanding Pattern Matching](http://www.littlealchemist.io/2017-03-15-understading-elixir-pattern-matching/)
+
+And also to share this post with your friends and anyone interested in learning about this subject.  
+It's only fair to share!
 
 If this was useful to you,  
 please leave a comment and let me know!
 
 If it wasn't, also leave a comment and point out what a total crap and waste of your time it was.
 
-Take care and until next time,
+Take care and until next time,  
 Happy brewing!
