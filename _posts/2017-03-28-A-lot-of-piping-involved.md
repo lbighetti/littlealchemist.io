@@ -315,10 +315,12 @@ D A I L Y.
 
 That's it for today, hope you enjoyed it.
 
-Don't forget to check out my other Elixir posts:
+Don't forget to check out my latest posts:
 
 * [Elixir - 3 Reasons why you should be using it](http://www.littlealchemist.io/2017-03-07-elixir-3-reasons-why-you-should-be-using-it/)
 * [Understanding Pattern Matching](http://www.littlealchemist.io/2017-03-15-understading-elixir-pattern-matching/)
+* [How to Suck at Programming #1 - Getting Religious](http://www.littlealchemist.io/2017-03-11-how-to-suck-at-programming-1-intro-and-getting-religious/)
+
 
 And also to share this post with your friends and anyone interested in learning about this subject.  
 It's only fair to share!
