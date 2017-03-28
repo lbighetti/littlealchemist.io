@@ -1,7 +1,8 @@
 ---
 layout: post
 title: A lot of Piping involved
-date:   2017-03-28 15:00:00 +0100
+date: 2017-03-28 15:00:00 +0100
+category: elixir
 image: /img/elixir_pipe_operator.png
 share-img: /img/elixir_pipe_operator.png
 excerpt: Let's learn about a core feature of Elixir: it's called __the pipe operator__. Then we'll go over a real world example of how to utilize it and how to debug it.
