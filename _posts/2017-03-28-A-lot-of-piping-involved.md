@@ -2,23 +2,27 @@
 layout: post
 title: A lot of Piping involved
 date:   2017-03-28 15:00:00 +0100
+image: /img/elixir_pipe_operator.png
+share-img: /img/elixir_pipe_operator.png
+excerpt: Let's learn about a core feature of Elixir: it's called __the pipe operator__. Then we'll go over a real world example of how to utilize it and how to debug it.
+meta-description: Let's learn about a core feature of Elixir: it's called __the pipe operator__. Then we'll go over a real world example of how to utilize it and how to debug it.
 ---
 
-Let's learn about a core feature of Elixir and many other functional languages: it's called __piping__. Then we'll go over a real world example of how to utilize it.
+Let's learn about a core feature of Elixir: it's called __the pipe operator__. Then we'll go over a real world example of how to utilize it.
 
 When I decided to jump into Elixir, I had a dialog with a good german friend of mine (Robert if you're reading, you're awesome).
 
 It went something like this:
 
-\- _I'm going to work with Elixir._  
+\- I'm going to work with Elixir.  
 \- _Elixir? ...mkey...never heard of it._  
-\- _It's a functional language that runs on the Erlang VM_  
+\- It's a functional language that runs on the Erlang VM  
 \- _Functional? There will be a lot of piping involved._  
 
 __Wise man.__  
 There is indeed.
 
-This is how it looks like:
+This is what it looks like:
 
 ```elixir
 |>
@@ -37,7 +41,7 @@ Imagine you need call a function with certain parameters you have, and use the o
 output1 = function(param)
 ```
 
-Now, often you have to to this multiple times in sequence, making something like this :
+Often you have to to this multiple times in sequence, making something like this :
 
 ```elixir
 output1 = function(param)
@@ -46,19 +50,19 @@ output3 = function3(output2)
 output4 = function4(output3)
 ```
 
-Of course you can tell me, I can simplify that in most languages to:
+Of course, one can simplify that in most languages to:
 
 ```elixir
 output4 = function4(function3(function2(function(param))))
 ```
 
-Now, let me tell you, that's not very readable, is it ?
+Let me tell you, that's __not very readable__, is it ?
 
 What's worse, you have to read this code from left to right then switch to right to left, and read it inside out.  
 That's not the natural orders we humans read things.
 
 We are simple beings.  
-We see code like this, we get confused.
+We see code like this, __we get confused__.
 
 Here is how you would do that in Elixir:
 
@@ -133,7 +137,7 @@ param
   |> function4
 ```
 
-And hopefully you can see how much more readable that is :)
+And hopefully you can see how much __more readable__ that is :)
 
 ## But I need more Oomph!
 
@@ -164,7 +168,7 @@ output4 = function4(function3(function2(function(param), foo), bar), supa, dupa)
 
 _(Do you even code readability brah?)_
 
-Now we cast the _pipe spell_ on it:
+Now we cast the __pipe spell__ on it:
 
 ```elixir
 param
@@ -208,17 +212,39 @@ And that you want to do the following to it:
 
 Let's quickly go over the Elixir functions we'll need for this:
 
+---
+
 ```elixir
 String.downcase/1
+```
+
+Naturally, turns a string into all lower case.
+
+```elixir
 String.split/2
+```
+
+Separates the first argument into a list of strings, using the second argument as the separator.
+
+```elixir
 Enum.uniq/1
 ```
 
-Just in case you don't know, Elixir signature of functions are defined only by their __arity__. That is, the __amount of arguments it receives__.
+Removes duplicates from an enumerable.
 
-In this particular case the `String.downcase/1` and `String.split/2` receive the __target string as the first argument__ and `String.split/2` also receives the separator as the second argument.
+```elixir
+IO.inspect/2
+```
 
-`Enum.uniq/1` receives a enumerable and removes all duplicates.
+Prints the value of the first argument, preceded by the second argument (like an identifier).  
+Also returns the first argument unmodified (so we can plug this between other calls without side effects).
+
+This is used for debug purposes, production code shouldn't have this.  
+
+---
+
+Just in case you don't know, Elixir signature of functions are defined only by their __arity__.  
+That is, the __amount of arguments it receives__.
 
 Say the string we want to transform is in a variable named `input`:
 
@@ -227,16 +253,16 @@ input = "Example@Gmail.com,ExamplE@Gmail.COM,anoTHER.example@GMAIL.com"
 ```
 __Note the first two emails are duplicates.__
 
-Let's start with a yet different trick to piping, which is, __we can put the string alone__ in the first line:
+Let's start with:
 
 ```elixir
 input
   |> String.downcase
 ```
 
->"example@gmail.com,example@gmail.com,another.example@gmail.com"
+This will give us the lower case version.
 
-This is the same as calling `String.downcase(input)`.  
+And remember that calling `input |> String.downcase` is the same as calling `String.downcase(input)`.  
 Let's evolve it one more step.
 
 ```elixir
@@ -245,18 +271,38 @@ input
   |> String.split(",")
 ```
 
->["example@gmail.com", "example@gmail.com", "another.example@gmail.com"]
+At this stage, the input will be lowercased and will be transformed into a list.
 
-And, __alas__.
+So, __alas__.
 
 ```elixir
 input
   |> String.downcase
   |> String.split(",")
   |> Enum.uniq
+
 ```
 
->["example@gmail.com", "another.example@gmail.com"]
+Now, we should have what we desire, with duplicates removed.  
+A technique you can use to debug it is to use the `IO.inspect/2` mentioned before.
+
+We can add a call in each of the steps and see exactly what's going on:
+
+```elixir
+input
+  |> IO.inspect(label: "original")
+  |> String.downcase
+  |> IO.inspect(label: "downcase")
+  |> String.split(",")
+  |> IO.inspect(label: "split")
+  |> Enum.uniq
+  |> IO.inspect(label: "uniq")
+```
+
+>original: "Example@Gmail.com,ExamplE@Gmail.COM,anoTHER.example@GMAIL.com"  
+>downcase: "example@gmail.com,example@gmail.com,another.example@gmail.com"  
+>split: ["example@gmail.com", "example@gmail.com", "another.example@gmail.com"]  
+>uniq: ["example@gmail.com", "another.example@gmail.com"]
 
 P R O P E R L Y.
 
@@ -268,7 +314,7 @@ D A I L Y.
 
 That's it for today, hope you enjoyed it.
 
-Don't forget to _like_ and share this post with your friends and anyone interested in learning about this subject.
+Don't forget to share this post with your friends and anyone interested in learning about this subject.
 
 If this was useful to you,  
 please leave a comment and let me know!
