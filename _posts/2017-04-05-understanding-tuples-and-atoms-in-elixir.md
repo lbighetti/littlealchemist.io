@@ -52,9 +52,9 @@ Isn't it ?
 
 But then... he said the first item was an __atom__.
 
-_An ATOM?_
+__An ATOM?__
 
-_What the hell is an atom ??_
+__What the hell is an atom ??__
 
 I mean, I know what an atom is, but I'm guessing this isn't the kind that has electrons and neutrons.
 
@@ -106,7 +106,7 @@ But let's talk about the tuples a little more.
 
 What are Tuples?  
 __Tuples are a collection of values.__  
-They typically come in the size of 2 or 3 items, so small, not your collection to store life stories and your bank statement, but more of like summary information.
+They typically come in the size of 2 or 3 items, so, small, not your collection to store life stories and your bank statement, but more of like summary information.
 
 The way I showed you, is one of the most common ways it is used in Elixir.
 
@@ -137,13 +137,13 @@ This is how we use case in Elixir.
 You put a expresion, variable or function call __right after the case__, and put options to control the flow of the program.
 
 When `number` is equal to `1`, the program will print `"Number one"`.
-Likewise, when it is `2`, `"Number two will be printed"`.  
+Likewise, when it is `2`, `"Number two"` will be printed.  
 Anything else will get you the `"Something other than one or two"` option.
 
-Note that the `_` matches to anything, and the __underscore__ itselftdenotes that we _don't intend to use this value at all_.  
-We basically don't care about the value in this case.
+Note that the `_` matches to anything, and the __underscore__ itself denotes that we __don't intend to use this value at all__.  
+We don't care about the value in this case.
 
-Now, let's say we have this function: `your_function(argument)`, that we know returns a tuple.
+Now, say we have this function: `your_function(argument)`, and we know it __returns a tuple__.
 
 Typically we could do:
 
@@ -166,7 +166,7 @@ What this means is:
 Damn.  
 That's beautiful.
 
-You avoid putting a lot of boilerplate code to support straight forward use cases.  
+You __avoid putting a lot of boilerplate code__ to support straight forward use cases.  
 And also very complicated ones actually.
 
 However, this is not the only way __tuples__ are used.  
@@ -182,7 +182,7 @@ So if you updated there and you __updated 57 rows__, and the database returned _
 ```
 
 Again, loyal.  
-Properly saluted!
+__Properly saluted!__
 
 ## Epilogue
 
