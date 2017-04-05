@@ -2,16 +2,13 @@
 layout: post
 title:  "Understanding Tuples and Atoms in Elixir"
 date:   2017-04-05 15:50:00 +0100
-image: /img/elixir.png
-share-img: /img/elixir.png
+image: /img/elixir_atoms_tuples.png
+share-img: /img/elixir_atoms_tuples.png
 category: elixir
 excerpt: Let's go over what are Atoms and Tuples, how they're used in Elixir and why they're powerful.
 meta-description: Let's go over what are Atoms and Tuples, how they're used in Elixir and why they're powerful.
 ---
-<!-- or The Atomic Tuppleware - a brief tale about Tuples and Atoms. -->
-In Elixir there is a data structure called __Tuple__. What a funky name.
-<!-- Reminds me of tupperware. -->
-
+In Elixir there is a data structure called __Tuple__. What a funky name.  
 There is also a data type called __Atom__.  
 Let's go over what they are, how they're used in Elixir and why they're powerful.
 
@@ -126,7 +123,7 @@ We Pattern Match!!
 ## Case and Pattern Matching with Tuples
 
 Let's talk briefly about `case` in Elixir.
-By the way check out my [Pattern Matching post](<<link>>) if you haven't yet.
+By the way check out my [Pattern Matching post](http://www.littlealchemist.io/2017-03-15-understading-elixir-pattern-matching/) if you haven't yet.
 
 ```elixir
 case number do
