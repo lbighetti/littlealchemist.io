@@ -1,13 +1,16 @@
 ---
 layout: post
-title: "How to Suck at Programming #1 - Getting Religious"
-date: "2017-03-11 21:39:03 +0100"
-category: How to Suck at Programming
-image: /img/thumb_down.png
-share-img: /img/thumb_down.png
+current: post
+navigation: True
+title: How to Suck at Programming #1 - Getting Religious
+date: 2017-03-11 21:39:03 +0100
+tags: elixir
+class: post-template
+subclass: 'post tag-elixir'
+author: leandro
 excerpt: Debuting the series that will teach how to be a horrible a programmer.
 meta-description: Debuting the series that will teach how to be a horrible a programmer.
-
+cover: False
 ---
 
 People often ask me how to be a good programmer. It's not an easy or simple answer to that question.  

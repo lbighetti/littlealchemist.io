@@ -9,13 +9,13 @@ ghost:
   twitter: tryghost
   cover: False
 leandro:
-  username: hannah
+  username: leandro
   name: Leandro Bighetti
-  location: London, UK
-  url_full: http://hannah.wf/
-  url: hannah.wf
-  bio: Hannah is the co-founder and lead developer at Ghost. She spends her days looking after Ghost's developer community, tracking down bugs & ensuring Ghost(Pro) is a happy place.
-  picture: assets/images/hannah.jpg
+  location: Berlin, Germany
+  url_full: http://littlealchemist.io
+  url: littlealchemist.io
+  bio: Leandro is a software developer passionate about spreading the BEAM word and teaching elixir.
+  picture: img/leandro.png
   facebook: False
   twitter: erisds
-  cover: assets/images/hannah-cover.jpg
+  cover: False
