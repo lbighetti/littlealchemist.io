@@ -75,7 +75,7 @@ username: lbighetti
 repo: jasper2
 branch: master
 relative_source: ../lbighetti.github.io/
-destination: ../_site/
+destination: _site/
 production_url:  http://www.littlealchemist.io
 source_url:  https://github.com/lbighetti/lbighetti.github.io
 
