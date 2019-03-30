@@ -10,6 +10,7 @@ subclass: 'post tag-elixir'
 author: leandro
 excerpt: Let's go through some major reasons why Elixir and its ecosystem are great for web development.
 meta-description: Let's go through some major reasons why Elixir and its ecosystem are great for web development.
+cover: False
 ---
 
 ## Reason 1: Functional
