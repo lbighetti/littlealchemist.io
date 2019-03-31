@@ -1,0 +1,21 @@
+ghost:
+  username: ghost
+  name: Ghost
+  url_full: http://jekyller.github.io/jasper2/
+  url: jekyller.github.io/jasper2
+  bio: The professional publishing platform
+  picture: assets/images/ghost.png
+  facebook: ghost
+  twitter: tryghost
+  cover: False
+leandro:
+  username: leandro
+  name: Leandro Bighetti
+  location: Berlin, Germany
+  url_full: http://littlealchemist.io
+  url: littlealchemist.io
+  bio: Leandro is a software developer passionate about spreading the BEAM word and teaching elixir.
+  picture: img/avatar-icon.png
+  facebook: False
+  twitter: erisds
+  cover: False

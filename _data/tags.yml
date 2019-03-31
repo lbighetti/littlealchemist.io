@@ -1,0 +1,5 @@
+elixir:
+  name: elixir
+  description: Elixir is a dynamic, functional language designed for building scalable and maintainable applications.
+  # cover: img/elixir.png
+  cover: false

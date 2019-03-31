@@ -1,12 +1,16 @@
 ---
 layout: post
+current: post
+navigation: True
 title:  "Understanding Tuples and Atoms in Elixir"
 date:   2017-04-05 15:50:00 +0100
-image: /img/elixir_atoms_tuples.png
-share-img: /img/elixir_atoms_tuples.png
-category: elixir
+tags: elixir
+class: post-template
+subclass: 'post tag-elixir'
+author: leandro
 excerpt: Let's go over what are Atoms and Tuples, how they're used in Elixir and why they're powerful.
 meta-description: Let's go over what are Atoms and Tuples, how they're used in Elixir and why they're powerful.
+cover: False
 ---
 In Elixir there is a data structure called __Tuple__. What a funky name.  
 There is also a data type called __Atom__.  

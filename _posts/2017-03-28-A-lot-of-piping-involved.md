@@ -1,17 +1,20 @@
 ---
 layout: post
+current: post
+navigation: True
 title: A lot of Piping involved
 date: 2017-03-28 15:00:00 +0100
-category: elixir
-image: /img/elixir_pipe_operator.png
-share-img: /img/elixir_pipe_operator.png
+tags: elixir
+class: post-template
+subclass: 'post tag-elixir'
+author: leandro
 excerpt: Let's learn about a core feature of Elixir, it's called the pipe operator. Then we'll go over a real world example and how to debug it.
 meta-description: Let's learn about a core feature of Elixir, it's called the pipe operator. Then we'll go over a real world example and how to debug it.
 ---
 
 Let's learn about a core feature of Elixir: it's called __the pipe operator__. Then we'll go over a real world example of how to utilize it.
 
-When I decided to jump into Elixir, I had a dialog with a good german friend of mine (Robert if you're reading, you're awesome).
+When I decided to jump into Elixir, I had a dialog with a good friend of mine.
 
 It went something like this:
 
@@ -208,8 +211,8 @@ Let's say you have the following scenario: __a list of emails, separated by comm
 And that you want to do the following to it:
 
 1. Force all emails to be __lowercase__
-1. __Separate__ them into a __list of strings__
-1. __Remove duplicates__
+2. __Separate__ them into a __list of strings__
+3. __Remove duplicates__
 
 Let's quickly go over the Elixir functions we'll need for this:
 
